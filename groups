@@ -1,3 +1,5 @@
-# UUID                                  	Group Name
-#
-ab285abcb778fb48ff3860bde9e85506a3cfe82f	puppet-mysql-distgit-ptl
+# UUID          Group Name
+6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
+d62774dc85cf7809ac3e8237a922bded401f2fe0       	puppet-mysql-distgit-core
+ab285abcb778fb48ff3860bde9e85506a3cfe82f        	puppet-mysql-distgit-ptl
+global:Registered-Users		Registered Users
