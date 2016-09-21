@@ -7,8 +7,8 @@
 
 
 Name:           puppet-mysql
-Version:        XXX
-Release:        XXX
+Version:        3.9.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Installs, configures, and manages the MySQL service.
 License:        Apache-2.0
 
@@ -50,4 +50,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/mysql/
 
 
 %changelog
+* Wed Sep 21 2016 Haikel Guemar <hguemar@fedoraproject.org> - 3.9.0-1.ad259bd.git
+- Newton update 3.9.0 (ad259bd05a0190475fde02dacdc9a3d7b9621ec9)
+
 
