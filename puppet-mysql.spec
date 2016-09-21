@@ -1,4 +1,10 @@
+%{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-mysql
+%global commit ad259bd05a0190475fde02dacdc9a3d7b9621ec9
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
+
 
 Name:           puppet-mysql
 Version:        XXX
@@ -8,7 +14,7 @@ License:        Apache-2.0
 
 URL:            http://github.com/puppetlabs/puppetlabs-mysql
 
-Source0:        https://github.com/puppetlabs/puppetlabs-mysql/archive/%{version}.tar.gz
+Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
 
 BuildArch:      noarch
 
