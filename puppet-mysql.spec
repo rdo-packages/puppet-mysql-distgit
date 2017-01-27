@@ -10,7 +10,7 @@ Name:           puppet-mysql
 Version:        XXX
 Release:        XXX
 Summary:        Installs, configures, and manages the MySQL service.
-License:        Apache-2.0
+License:        ASL 2.0
 
 URL:            http://github.com/puppetlabs/puppetlabs-mysql
 
