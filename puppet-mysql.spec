@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-mysql
-%global commit ad259bd05a0190475fde02dacdc9a3d7b9621ec9
+%global commit aec738379fbb7a01043dbe65293165898713195e
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-mysql
-Version:        XXX
-Release:        XXX
+Version:        3.10.0
+Release:        2%{?alphatag}%{?dist}
 Summary:        Installs, configures, and manages the MySQL service.
 License:        ASL 2.0
 
@@ -50,4 +50,6 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/mysql/
 
 
 %changelog
+* Thu Feb 09 2017 Alfredo Moralejo <amoralej@redhat.com> 3.10.0-2.aec7383git
+- Ocata update 3.10.0 (aec738379fbb7a01043dbe65293165898713195e)
 
