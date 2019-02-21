@@ -15,7 +15,8 @@ License:        ASL 2.0
 URL:            http://github.com/puppetlabs/puppetlabs-mysql
 
 Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
-
+# https://github.com/puppetlabs/puppetlabs-mysql/pull/1161
+Patch0001:      0001-Set-proper-python_package_name-for-RHEL-CentOS-8.patch
 BuildArch:      noarch
 
 Requires:       puppet-stdlib
@@ -26,7 +27,7 @@ Requires:       puppet >= 2.7.0
 Installs, configures, and manages the MySQL service.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%autosetup -p1 -n %{upstream_name}-%{upstream_version}
 
 find . -type f -name ".*" -exec rm {} +
 find . -size 0 -exec rm {} +
