@@ -1,20 +1,16 @@
-%{!?upstream_version: %global upstream_version %{commit}}
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %define upstream_name puppetlabs-mysql
-%global commit ad259bd05a0190475fde02dacdc9a3d7b9621ec9
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
-# DO NOT REMOVE ALPHATAG
-%global alphatag .%{shortcommit}git
 
 
 Name:           puppet-mysql
-Version:        XXX
-Release:        XXX
+Version:        6.2.0
+Release:        1%{?dist}
 Summary:        Installs, configures, and manages the MySQL service.
 License:        ASL 2.0
 
 URL:            http://github.com/puppetlabs/puppetlabs-mysql
 
-Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
+Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{version}.tar.gz
 # https://github.com/puppetlabs/puppetlabs-mysql/pull/1161
 Patch0001:      0001-Set-proper-python_package_name-for-RHEL-CentOS-8.patch
 BuildArch:      noarch
@@ -51,5 +47,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/mysql/
 
 
 %changelog
+* Thu Feb 15 2018 RDO <dev@lists.rdoproject.org> 6.2.0-1.6.2.0git
+- Update to 6.2.0
+
 
 
