@@ -53,3 +53,4 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/mysql/
 %changelog
 
 
+# REMOVEME: error caused by commit https://github.com/puppetlabs/puppetlabs-mysql/commit/9075bc30834f65b7d4e37abcf60c7cc2d3e15942
