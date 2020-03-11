@@ -15,8 +15,6 @@ License:        ASL 2.0
 URL:            http://github.com/puppetlabs/puppetlabs-mysql
 
 Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
-# https://github.com/puppetlabs/puppetlabs-mysql/pull/1161
-Patch0001:      0001-Set-proper-python_package_name-for-RHEL-CentOS-8.patch
 BuildArch:      noarch
 
 Requires:       puppet-stdlib
