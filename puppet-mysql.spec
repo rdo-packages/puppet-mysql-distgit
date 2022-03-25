@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-mysql
-%global commit ad259bd05a0190475fde02dacdc9a3d7b9621ec9
+%global commit dd2b6407e245f8bbd87918e158fd063a2aa5cfb9
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-mysql
-Version:        XXX
-Release:        XXX
+Version:        12.0.1
+Release:        2%{?alphatag}%{?dist}
 Summary:        Installs, configures, and manages the MySQL service.
 License:        ASL 2.0
 
@@ -49,4 +49,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/mysql/
 
 
 %changelog
+* Fri Mar 25 2022 RDO <dev@lists.rdoproject.org> 12.0.1-2.dd2b640git
+- Update to post 12.0.1 (dd2b6407e245f8bbd87918e158fd063a2aa5cfb9)
+
 
