@@ -18,7 +18,6 @@ Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}
 BuildArch:      noarch
 
 Requires:       puppet-stdlib
-Requires:       puppet-staging
 Requires:       puppet >= 2.7.0
 
 %description
