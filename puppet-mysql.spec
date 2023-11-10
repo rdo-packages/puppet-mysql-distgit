@@ -7,8 +7,8 @@
 
 
 Name:           puppet-mysql
-Version:        XXX
-Release:        XXX
+Version:        10.10.0
+Release:        1%{?dist}
 Summary:        Installs, configures, and manages the MySQL service.
 License:        ASL 2.0
 
@@ -48,4 +48,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/mysql/
 
 
 %changelog
+* Fri Nov 10 2023 RDO <dev@lists.rdoproject.org> 10.10.0-1
+- Update to 10.10.0
+
 
