@@ -2,8 +2,8 @@
 %define upstream_name puppetlabs-mysql
 
 Name:           puppet-mysql
-Version:        XXX
-Release:        XXX
+Version:        16.0.0
+Release:        1%{?dist}
 Summary:        Installs, configures, and manages the MySQL service.
 License:        ASL 2.0
 
@@ -43,4 +43,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/mysql/
 
 
 %changelog
+* Tue Sep 24 2024 RDO <dev@lists.rdoproject.org> 16.0.0-1
+- Update to 16.0.0
+
 
